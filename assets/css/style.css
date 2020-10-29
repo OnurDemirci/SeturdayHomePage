@@ -482,4 +482,7 @@ a.purple-ml i {
   font-size: 37px;
   line-height: 47px;
 }
+  .bottom-footer a {
+  font-size:12px;
+  }
 }
