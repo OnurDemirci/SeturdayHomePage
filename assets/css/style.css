@@ -1,0 +1,485 @@
+body {
+  margin: 0;
+  padding: 0
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+}
+.content{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.container {
+  width: 100%;
+}
+.header-container {
+  display: flex;
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 20;
+}
+.menu ul {
+  list-style: none;
+  margin-block-start:unset;
+  margin-block-end:unset;
+}
+
+.menu ul li {
+  float: left;
+  margin-left: 30px;
+
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  line-height: 70px;
+  transition: .3s;
+}
+.menu {
+  position: absolute;
+  display: flex;
+  right: 38px;
+  height: 70px;
+  font-family: Nunito;
+}
+.menu a {
+  line-height: 60px;
+  text-decoration: none;
+  color:#000;
+  font-size: 13px;
+  font-weight: 600;
+}
+a.search-button {
+  margin:auto 25px;
+  font-size: 20px;
+}
+a.menu-link {
+  margin: auto 5px;
+  height: 43px;
+  line-height: 43px;
+  text-align: center;
+  border-radius: 45px;
+  width: 105px;
+  font-size: 12px;
+  transition: .7s;
+}
+
+.white-ml {
+  border:1px solid #5d2466;
+  width: 89px !important;
+}
+.white-ml:hover {
+  box-shadow:0 0 30px 1px rgba(0, 0, 0, .26);
+  transition: .7s;
+}
+.purple-ml {
+  background-color: #5d2466;
+  color: #fff !important;
+}
+.purple-ml:hover {
+  box-shadow:0 0 30px 1px rgba(0, 0, 0, .26);
+  transition: .7s;
+  background-color: #7a3986;
+}
+
+a.purple-ml i {
+  margin-right: 7px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.logo {
+  height: 70px;
+  width: fit-content;
+}
+.logo img {
+  height: 60px;
+  margin: 5px 20px;
+}
+
+.menu ul li a:hover {
+  color:#7a3986;
+  transition: .3s;
+}
+
+.first-article {
+  width: 100%;
+  height: 727px;
+  background-size: cover;
+  background-position: center;
+  position:relative;
+
+
+}
+#pera-muzesi {
+  background-image: url("../images/article-pictures/pera-muzesi.jpg");
+}
+.background-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 0;
+  transition: .7s ease;
+}
+.tag {
+  padding: 7px 17px;
+  font-family: Nunito;
+  background:rgba(255, 255, 255, .7);
+  color: #5d2466;
+  font-size: 8px;
+  border-radius: 16px;
+  font-weight: 800;
+  position: absolute;
+  margin-left: 20px;
+  top: 20px;
+  transition: .5s;
+  text-align: center;
+}
+.tag:hover{
+  transition: .5s;
+  background-color: white;
+  cursor: pointer;
+}
+.featuring-article {
+  width: 50%;
+  height: fit-content;
+  margin: auto;
+  text-align:center;
+  position: relative;
+  vertical-align: middle;
+  color: #ffffff;
+  font-family: Nunito;
+  padding-top: 250px;
+}
+
+.continue a {
+  text-decoration: none;
+  font-family: Playfair Display;
+  color: #fff;
+  font-style: italic;
+  font-size: 1.25em;
+  font-weight: 400;
+  padding: 0 17px;
+}
+.continue {
+  height: fit-content;
+  position: relative;
+  display: inline-flex;
+}
+.arrow  {
+  padding-bottom: 5px;
+  display: inline;
+  transition: .3s ease;
+}
+.arrow img {
+  width: 64px;
+  margin-top: 10px;
+  position:relative;
+}
+.right-arrow {
+  opacity: 1;
+  visibility: visible;
+}
+.left-arrow {
+  visibility: hidden;
+  width: 0;
+  opacity: 0;
+}
+.continue:hover > .right-arrow {
+  width: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+.continue:hover > .left-arrow {
+  visibility: visible;
+  opacity: 1;
+  width: 64px;
+}
+
+
+.featuring-article h2 {
+  font-family: Playfair Display;
+  font-style: italic;
+  font-size: 45px;
+  margin-block-start: .77em;
+  margin-block-end: .50em;
+  font-weight: 700 !important;
+  line-height: 1.4cm;
+}
+.featuring-tag {
+  padding: 10px 23px;
+  font-size:10px;
+  transition: .5s;
+  position: relative!important;
+  top:0;
+  border-radius: 22px;
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.column-1{
+  width: 50%;
+
+
+}
+.column-2{
+  width: 50%;
+}
+.articles{
+  display: flex;
+  padding: 10px;
+}
+.big-tile{
+  width: calc(100% - 20px);
+  height:600px;
+
+}
+.tile{
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  margin: 10px;
+  color: #ffffff;
+  font-family: Nunito;
+  position: relative;
+  transition: .5s;
+  overflow: hidden;
+  min-height: 350px;
+  min-width: 50%;
+  box-shadow: 0 10px 17px 0 rgba(57, 57, 57, .25);
+  cursor: pointer;
+}
+
+
+
+.article-summary p{
+  font-size: 12px;
+  margin-block-start: 0.5em;
+  margin:5px 0 5px 20px;
+}
+.article-title h4{
+  margin-block-end: 0.2em;
+  margin:5px 0 5px 20px;
+}
+.tile article{
+  position: absolute;
+  bottom: 20px;
+}
+.tile:hover > .background-holder {
+  transform: scale(1.1);
+  transition: .5s;
+}
+.tile:hover > .background-overlay{
+  background-color: rgba(0,0,0,0.5);
+  transition: .5s;
+}
+
+.background-holder {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: -1;
+  transition: .5s;
+}
+#inci-kupeli-kiz{
+  background-image: url("../images/article-pictures/inci-kupeli-kiz.jpg");
+}
+#shikoku-adasi{
+  background-image: url("../images/article-pictures/shikoku-adasi.jpg");
+}
+#rizzi-house{
+  background-image: url("../images/article-pictures/happy-rizzi-house.jpg");
+}
+#verona-italya{
+  background-image: url("../images/article-pictures/verona-italya.jpg");
+}
+#oberoi-mauritius{
+  background-image: url("../images/article-pictures/oberoi-mauritius.jpg");
+}
+#arequipa-peru{
+  background-image: url("../images/article-pictures/arequipa-peru.jpg");
+}
+#modern-sanat{
+  background-image: url("../images/article-pictures/modern-sanat.jpg");
+}
+#tiran-arnavutluk{
+  background-image: url("../images/article-pictures/tiran-arnavutluk.jpg");
+}
+#hindistan-varanasi{
+  background-image: url("../images/article-pictures/hindistan-varanasi.jpg");
+}
+#maramures-romanya{
+  background-image: url("../images/article-pictures/maramures-romanya.jpg");
+}
+#six-senses-hotel{
+  background-image: url("../images/article-pictures/six-sensations-hotel.jpg");
+}
+.tile-holder{
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.small-tile{
+  width: calc(50% - 20px);
+  height:300px;
+  min-width: calc(50% - 20px);
+  min-height: 300px;
+}
+.medium-tile{
+  width: calc(100% - 20px);
+  height: 400px;
+}
+.wide-tile{
+  width: calc(100% - 20px);
+  height: 270px;
+  margin-top: 20px;
+}
+.author-info{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #ffffff;
+  height: 100px;
+  color: #333;
+
+
+}
+.with-author .background-holder{
+  height: calc(100% - 100px);
+}
+.author-picture{
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  border-radius:50%;
+  position: absolute;
+}
+.author-picture img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+.author-text{
+  margin-left: 100px;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  height: fit-content;
+}
+.author-summary p {
+  font-size: 12px;
+  margin-block-end: unset;
+  margin-block-start: unset;
+  color: #999999;
+}
+.author-name h6{
+  margin-block-end: unset;
+  font-size: 16px;
+  margin-block-start: unset;
+  margin: 5px 0;
+  color: #333;
+}
+.with-author article {
+  position: absolute;
+  bottom: 120px !important;
+}
+.small-tile article{
+  width: 50%;
+}
+.tall-tile{
+  height: 400px;
+  min-width: calc(50% - 20px);
+  min-height: 400px;
+}
+.tall-tile article{
+  width: 50%;
+}
+.top-footer{
+  width: 100%;
+  min-height: 80px;
+  background-color: #ffffff;
+  text-align: center;
+  height: 141px;
+  position: relative;
+}
+.bottom-footer{
+  width: 100%;
+  padding: 15px 0;
+  background-color: inherit;
+  text-align: center;
+  vertical-align: middle;
+}
+.top-footer a{
+  font-family: Nunito;
+  font-size: small;
+  color: #999999;
+  text-decoration: none;
+}
+.bottom-footer a{
+  font-family: Nunito;
+  font-size: small;
+  color: #333333;
+  text-decoration: none;
+  font-weight: lighter;
+}
+.brand-info p{
+  font-family: "Playfair Display";
+  color: #666666;
+  font-size: 15px;
+  margin-block-start: .5em;
+}
+.social-media-links i{
+  margin-right: 9px;
+  margin-left: 9px;
+  font-size: 22px;
+  color: #2b2b2b;
+}
+.social-media-links{
+  margin: 25px 10px 14px 10px;
+  display: inline-block;
+}
+.like{
+  position: absolute;
+  z-index:10;
+  right: 20px;
+  bottom:20px;
+  font-size: 12px;
+  color: #848383;
+}
+.like i {
+  color:rgb(238,119,114);
+}
+.with-author .like {
+  bottom: 120px !important;
+}
+
+@media (max-width: 1366px) {
+  .article-title h4 {
+    font-size: 13px;
+  }
+  .tile article {
+    width: 50%;
+  }
+  .small-tile {
+    height: 350px;
+  }
+  .first-article {
+    height: 576px;
+  }
+  .featuring-article {
+    padding-top: 140px;
+  }
+.featuring-title h2 {
+  font-size: 37px;
+  line-height: 47px;
+}
+}
